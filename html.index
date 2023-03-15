@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Boolean Search Library</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Boolean Search Library</h1>
+  <form id="search-form">
+    <label for="companyName">Company Name:</label>
+    <input type="text" id="companyName" name="companyName" required><br><br>
+
+    <label for="alternativeNames">Alternative Company Names/Keywords (comma-separated):</label>
+    <input type="text" id="alternativeNames" name="alternativeNames" placeholder="e.g., Coke, Coca Cola"><br><br>
+
+    <label for="keywordTopic">Keyword Topic:</label>
+    <select id="keywordTopic" name="keywordTopic">
+      <option value="">None</option>
+      <option value="PR crisis">PR crisis</option>
+      <option value="Product launch">Product launch</option>
+      <option value="Industry trends">Industry trends</option>
+    </select><br><br>
+
+    <label for="sentiment">Sentiment:</label>
+    <select id="sentiment" name="sentiment">
+      <option value="">None</option>
+      <option value="positive">Positive</option>
+      <option value="negative">Negative</option>
+      <option value="neutral">Neutral</option>
+    </select><br><br>
+
+    <input type="submit" value="Generate Boolean Search">
+  </form>
+
+  <h3>Boolean Search:</h3>
+  <pre id="boolean-search"></pre>
+  <button id="copy-boolean">Copy Boolean</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
